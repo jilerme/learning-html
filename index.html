@@ -7,100 +7,125 @@
     <meta name="content" content="This page contains all the things I am learning how to create as I learm HTML.">
     <title>Not My first Web Page</title>
     <link rel="icon" href="html5.png" type="image/x-icon">
-    <link rel="stylesheet" href="main.css" type="text/css"> 
+    <link rel="stylesheet" href="main.css" type="text/css">
   </head>
 
   <body>
-    <h1>My Goals for 2024!</h1>
+    <header>
+      <h1>My Goals for 2024!</h1>
+
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li>
+            <a href="#html">Learn HTML</a>
+          </li>
+          <li>
+            <a href="#vacation">Planning a Vacation</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <hr>
+    <main>
+      <article id="html">
+        <h2>I'm ready to learm HTML</h2>
+        <p>This is not my first web page.</p>
+        <section>
+          <h3>HTML5</h3>
+          <img src="img/html_logo.png" alt="HTML5 Logo" title="I am learning HTML5" width="250">
+          <figure>
+            <figcaption>An exemple of HTLM5 code:</figcaption>
+            <p>
+              <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+            </p>
+          </figure>
+        </section>
+        <section>
+          <h3>My Daily Schedule</h3>
+          <p>Let me tell you how:</p>
+          <ol>
+            <li>...I learm more about web dev.</li>
+            <li>...I plan out my schedule.</li>
+            <li>
+              ...I use resources from
+              <abbr title="Mozila Developer Network">
+                <a href="https://developer.mozilla.org/">MDN</a> </abbr
+              >.
+            </li>
+          </ol>
+          <aside>
+            <details>
+              <summary>
+                Guess the <mark>number of hours</mark> I code per day
+              </summary>
+              <p>
+                I start at <time datetime="20:00">8pm</time> and I write
+                <time datetime="PT2H"> 2 hours</time> every night.
+              </p>
+            </details>
+          </aside>
+        </section>
+      </article>
 
-    <nav>
-      <ul>
-        <li>
-          <a href="#html">Learn HTML</a>
-        </li>
-        <li>
-          <a href="#vacation">Planning a Vacation</a>
-        </li>
-      </ul>
-    </nav>
+      <hr>
+
+      <article id="vacation">
+        <h2>I Am Alson Planning a Vacation</h2>
+        <p>I've been working hard and really need a get way.</p>
+        <p>I live in Brazil and I want to visit Peru.</p>
+
+        <section>
+          <h3>Places I'd Like to Visit</h3>
+          <ul>
+            <li>
+              <p>
+                I've heard good things about beaches in <strong>Peru</strong>.
+              </p>
+              <figure>
+                <img src="img/vacation.jpg" alt="Machu Picchu" title="I want to visit Peru"
+                  width="600" loading="lazy">
+                <figcaption>Machu Picchu Panorama</figcaption>
+              </figure>
+            </li>
+            <li>
+              <p>I've heard good things about going here:</p>
+              <address>
+                Las Pocitas<br>
+                Au. Panamericana<br>
+                Mancora, Peru
+              </address>
+              <figure>
+                <img src="img/mancora.jpg" alt="Mancora's Beach"
+                  width="600" loading="lazy">
+                <figcaption>Beach in Mancora</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+        <!--TODO: Add more places-->
+        <section>
+          <h3>Places I Want to Avoid.</h3>
+          <dl>
+            <dt>United States</dt>
+            <dd>I hear some Americans hates <strong>latinos!</strong></dd>
+
+            <dt>Alaska</dt>
+            <dd>This is too cold.</dd>
+          </dl>
+        </section>
+      </article>
+    </main>
 
     <hr>
-    <section id="html">
-    <h2>I'm ready to learm HTML</h2>
-    <p>This is not my first web page.</p>
-    <img src="img/html_logo.png" alt="HTML5 Logo"
-    title="I am learning HTML5" width="250">
-    <figure>
-      <figcaption>
-       An exemple of HTLM5 code: 
-      </figcaption>
+    <footer>
       <p>
-        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+        &lt;&lt;&lt; &copy;
+        <a href="about.html">Guilherme Machado</a> &gt;&gt;&gt;
       </p>
-    </figure>
-    <h3>My Daily Schedule</h3>
-    <p>Let me tell you how:</p>
-    <ol>
-      <li>...I learm more about web dev.</li>
-      <li>...I plan out my schedule.</li>
-      <li>...I use resources from <abbr title="Mozila Developer Network"> 
-        <a href="https://developer.mozilla.org/">MDN</a>
-      </abbr>.</li>
-    </ol>
-    </section>
-
-    <hr>
-
-    <section id="vacation">
-    <h2>I Am Alson Planning a Vacation</h2>
-    <p>I've been working hard and really need a get way.</p>
-    <p>I live in Brazil and I want to visit Peru.</p>
-    
-    <h3>Places I'd Like to Visit</h3>
-  <ul>
-    <li><p>I've heard good things about beaches in <strong>Peru</strong>.</p>
-    <figure>
-      <img src="img/vacation.jpg" alt="Machu Picchu"
-      title="I want to visit Peru" width="600" loading="lazy">
-      <figcaption>
-        Machu Picchu Panorama
-      </figcaption>
-    </figure>
-    </li>
-    <li><p>I've heard good things about going here:</p>
-    <address>
-      Las Pocitas
-      <br>Au. Panamericana
-      <br>Mancora, Peru
-    </address>
-    <figure>
-    <img src="img/mancora.jpg" alt="Mancora's Beach"
-    width="600" loading="lazy">
-    <figcaption>
-      Beach in Mancora
-    </figcaption>
-    </figure>
-  </li>
-  </ul>
-
-    <!--TODO: Add more places-->
-    <h3>Places I Want to Avoid.</h3>
-    <dl>
-      <dt>United States</dt>
-      <dd>I hear some Americans hates <strong>latinos!</strong></dd>
-      
-      <dt>Alaska</dt>
-      <dd>This is too cold.</dd>
-    </dl>
-   </section>
-
-    <hr>
-    &lt;&lt;&lt; &copy; <a href="about.html">Guilherme Machado</a> &gt;&gt;&gt;
-    <p>
-      <a href="#">Back to Top</a>
-    </p>
+      <p>
+        <a href="#">Back to Top</a>
+      </p>
+    </footer>
   </body>
-
 </html>
